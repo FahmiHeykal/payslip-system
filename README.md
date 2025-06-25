@@ -88,7 +88,7 @@ python seed.py
 
 - Pytest
 
--Loguru
+- Loguru
 
 ## Automated Testing
 This project includes unit and integration tests using pytest.
