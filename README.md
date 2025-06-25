@@ -97,7 +97,7 @@ This project includes unit and integration tests using pytest.
 pytest -v
 ```
 
-##Test folder structure :
+## Test folder structure :
 
 tests/
 ├── test_attendance.py
@@ -139,17 +139,17 @@ On Windows: venv\Scripts\activate
 
 ### Install dependencies :
 ```bash 
-pip install -r requirements.txt`
+pip install -r requirements.txt
 ```
 
 ### Run database migration :
 ```bash
-alembic upgrade head`
+alembic upgrade head
 ```
 
 ###Start the application :
 ```bash
-uvicorn app.main:app --reload`
+uvicorn app.main:app --reload
 ```
 
 ### Seed fake data :
@@ -159,6 +159,6 @@ python seed.py
 
 ### Access API documentation :
 ```bash
-- Swagger : ``http://localhost:8000/docs``
-- ReDoc : ``http://localhost:8000/redoc``
+- Swagger : ``http://localhost:8000/docs
+- ReDoc : ``http://localhost:8000/redoc
 ```
