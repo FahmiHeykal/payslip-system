@@ -93,9 +93,11 @@ This project includes unit and integration tests using pytest.
 
 ### Run all tests :
 
-``` bash pytest -v```
+```bash 
+pytest -v
+```
 
-### Test folder structure :
+##Test folder structure :
 
 tests/
 ├── test_attendance.py
