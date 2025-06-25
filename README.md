@@ -158,7 +158,11 @@ python seed.py
 ```
 
 ### Access API documentation :
+- Swagger :
 ```bash
-- Swagger : ``http://localhost:8000/docs
-- ReDoc : ``http://localhost:8000/redoc
+http://localhost:8000/docs
+```
+- ReDoc :
+```bash
+http://localhost:8000/redoc
 ```
