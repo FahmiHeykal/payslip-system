@@ -98,7 +98,8 @@ pytest -v
 ```
 
 ## Test folder structure :
-`` tests/
+```
+tests/
 ├── test_attendance.py
 ├── test_auth.py
 ├── test_overtime.py
@@ -107,7 +108,7 @@ pytest -v
 ├── test_reimbursement.py
 ├── test_summary.py
 └── conftest.py
-``
+```
 
 All features are covered and verified through automated tests.
 
