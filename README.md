@@ -1,8 +1,8 @@
-# Payslip Generation System - FastAPI + PostgreSQL
+# Payslip System - FastAPI + PostgreSQL
 
 This is a scalable web-based payroll system designed to handle employee attendance, overtime, reimbursements, and payslip generation automatically and efficiently. Built with FastAPI and PostgreSQL, it includes full audit logging, request tracking, and automated testing.
 
-In this system, each employee :
+In this employee :
 - Works a regular 8-hour schedule (9AM - 5PM), Monday to Friday.
 - Has their salary prorated based on attendance days within a payroll period.
 - Can request overtime (up to 3 hours/day) which is paid at 2x the prorated hourly rate.
@@ -93,11 +93,11 @@ This project includes unit and integration tests using pytest.
 
 ### Run all tests :
 
-pytest -v
+```pytest -v```
 
 ### Test folder structure :
 
-``tests/
+tests/
 ├── test_attendance.py
 ├── test_auth.py
 ├── test_overtime.py
@@ -106,42 +106,42 @@ pytest -v
 ├── test_reimbursement.py
 ├── test_summary.py
 └── conftest.py
-All features are covered and verified through automated tests.``
+
+All features are covered and verified through automated tests.
 
 ## Advanced Features
 
-created_at and updated_at timestamps on all records
+- created_at and updated_at timestamps on all records
 
-created_by and updated_by fields for traceability
+- created_by and updated_by fields for traceability
 
-Request IP address is logged for every user action
+- Request IP address is logged for every user action
 
-Audit log table to record all critical changes
+- Audit log table to record all critical changes
 
-Middleware to inject unique request_id into logs
+- Middleware to inject unique request_id into logs
 
 ## Run Locally
-- Clone the repository :
-`git clone https://github.com/your-username/payslip-system.git
-cd payslip-system`
+### Clone the repository :
+- `git clone https://github.com/your-username/payslip-system.git-payslip-system`
 
-- Create a virtual environment :
-`python -m venv venv
+### Create a virtual environment :
+- `python -m venv venv
 source venv/bin/activate  
 On Windows: venv\Scripts\activate`
 
-- Install dependencies :
-`pip install -r requirements.txt`
+### Install dependencies :
+- `pip install -r requirements.txt`
 
-- Run database migration :
-`alembic upgrade head`
+### Run database migration :
+- `alembic upgrade head`
 
-- Start the application :
-`uvicorn app.main:app --reload`
+###Start the application :
+- `uvicorn app.main:app --reload`
 
-- Seed fake data :
-`python seed.py`
+### Seed fake data :
+- `python seed.py`
 
-- Access API documentation :
-```Swagger : http://localhost:8000/docs```
-```ReDoc : http://localhost:8000/redoc```
+### Access API documentation :
+- Swagger : ``http://localhost:8000/docs``
+- ReDoc : ``http://localhost:8000/redoc``
