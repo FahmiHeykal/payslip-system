@@ -9,8 +9,7 @@ class Overtime(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
     date = Column(Date, nullable=False)
-    hours = Column(Float, nullable=False)  # maksimal 3 jam
-
+    hours = Column(Float, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 

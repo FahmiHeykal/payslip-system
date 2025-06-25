@@ -11,6 +11,6 @@ def test_valid_attendance(client, user_credentials):
 
 def test_invalid_attendance_weekend(client, user_credentials):
     token = get_token(client, user_credentials)
-    saturday = "2025-06-28"  # Adjust ke hari Sabtu
+    saturday = "2025-06-28"  
     res = client.post("/api/v1/employee/attendance", json={"date": saturday}, headers={"Authorization": f"Bearer {token}"})
     assert res.status_code == 400
