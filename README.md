@@ -93,7 +93,7 @@ This project includes unit and integration tests using pytest.
 
 ### Run all tests :
 
-```pytest -v```
+``` bash pytest -v```
 
 ### Test folder structure :
 
