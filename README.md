@@ -125,25 +125,40 @@ All features are covered and verified through automated tests.
 
 ## Run Locally
 ### Clone the repository :
-- `git clone https://github.com/your-username/payslip-system.git-payslip-system`
+```bash
+git clone https://github.com/your-username/payslip-system.git
+cd payslip-system
+```
 
 ### Create a virtual environment :
-- `python -m venv venv
+```bash
+python -m venv venv
 source venv/bin/activate  
-On Windows: venv\Scripts\activate`
+On Windows: venv\Scripts\activate
+```
 
 ### Install dependencies :
-- `pip install -r requirements.txt`
+```bash 
+pip install -r requirements.txt`
+```
 
 ### Run database migration :
-- `alembic upgrade head`
+```bash
+alembic upgrade head`
+```
 
 ###Start the application :
-- `uvicorn app.main:app --reload`
+```bash
+uvicorn app.main:app --reload`
+```
 
 ### Seed fake data :
-- `python seed.py`
+```bash
+python seed.py
+```
 
 ### Access API documentation :
+```bash
 - Swagger : ``http://localhost:8000/docs``
 - ReDoc : ``http://localhost:8000/redoc``
+```
