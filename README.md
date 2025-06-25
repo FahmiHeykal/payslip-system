@@ -82,11 +82,13 @@ python seed.py
 
 - PostgreSQL
 
-- SQLAlchemy
+- SQLAlchemy & Alembic
 
 - Pydantic
 
 - Pytest
+
+-Loguru
 
 ## Automated Testing
 This project includes unit and integration tests using pytest.
@@ -109,7 +111,6 @@ tests/
 ├── test_summary.py
 └── conftest.py
 ```
-
 All features are covered and verified through automated tests.
 
 ## Advanced Features
