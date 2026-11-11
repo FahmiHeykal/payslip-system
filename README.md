@@ -128,7 +128,7 @@ All features are covered and verified through automated tests.
 ## Run Locally
 ### Clone the repository :
 ```bash
-git clone https://github.com/your-username/payslip-system.git
+git clone https://github.com/your-FahmiHeykal/payslip-system.git
 cd payslip-system
 ```
 
